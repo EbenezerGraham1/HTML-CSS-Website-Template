@@ -1,0 +1,589 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	width: 100%;
+	margin: 0;
+	font-family: Montserrat, sans-serif; 
+	font-size: 0.9em;
+	font-weight: 300;/* I reduced the weight of the font because Montserrat normally is distracting when it is thick */
+	color: #252525;
+}
+
+h1{
+	text-align: center; /* Want the Headings of my pages to be centered */
+}
+
+h4 {
+	text-align: center;
+	padding: 2;
+	text-decoration: none;
+	color: aliceblue;
+}
+
+h4:hover{
+	border:10%;
+	background-color: transparent;
+	border-color: #252525;
+}
+
+main{
+	width:100%;
+	height: 100%;
+}
+
+aside{
+	width:50%;
+	margin: 0 10%;
+	padding: 2%;
+}
+
+table{
+	border:0px;
+}
+
+tr{
+	padding:2%;
+	height: 35px;
+	border:0px;
+}
+
+tr:hover{
+	background-color :rgba(115,194,213,0.5);/* I want the viewer to get focus on the price when the hover over the row*/
+}
+
+td{
+	padding:2%;
+}
+
+p { 
+	line-height: 150%; /*This is intended to make may text more spacious and readable*/
+}
+
+nav {
+	position: absolute;
+	z-index: 1;
+	left: 70%;
+	width: 22%;
+	height: 45%;
+	padding-top: 15%;
+	padding-bottom: 0%;
+	padding-right: 2%;
+	padding-left: 2%;
+	background-color: rgba(129,101,166,0.90);
+}
+
+nav li {
+	display: block;
+	padding: 2%;
+    font-weight: 700;
+	font-size: 20px;
+}
+
+nav li a {
+	text-decoration: none;
+	color:aliceblue;	
+}
+
+nav li a:hover { 
+	color:#252525;
+}
+
+section{
+	margin: 1% 10%;
+}
+
+.banner{
+	height: 300px;
+	background-image: url(../Images/backgrounds/banner.jpg);
+	background-size: 100% auto;
+	background-attachment: fixed;
+}
+
+.fixednav{
+	position: fixed;
+}
+
+.quicklinks{
+	position: absolute;
+	margin: 0;
+	padding: 1% 2%;
+	width: 22%;
+	left: 70%;
+	z-index: 3;
+	color: aliceblue;
+}
+
+.quicklinks a{
+	text-decoration: none;
+	color: aliceblue;
+	font-size: 13px;
+}
+
+.quicklinks a:hover{
+	color: #252525;
+}
+
+.logo{
+	position: fixed;
+	z-index:5;
+	height: 40px;
+	width: auto;
+	margin:1.4%;
+}
+
+.landingpageimg{
+	width: 100%;
+	height: auto;
+}
+
+.prices-box{
+	display: inline-block;
+	top:-115px;
+	width: 600px;
+	height:400px;
+	padding:2%;
+	left: 10%;
+	background-color: rgba(255,255,255,.8);
+	position:relative;
+	z-index:1;
+	text-align:center;
+	box-shadow: 1px 1px 5px rgba(125,125,125,0.50) ;	
+}
+
+.video-box{
+	z-index:2;
+	position:relative;	
+	width:90%;
+	height:303.5px; 
+	border: 0px;
+}
+
+.booking-box {
+	color:aliceblue;
+	position: absolute;
+	z-index: 1;
+	left: 70%;
+	width: 22%;
+	height: auto;
+	background-color: #252525;
+	top: 806px;
+	margin:0%;
+	padding: 4.5% 2% 2% 2%;
+}
+
+.booking-box:hover{
+	background-color: #5156A8;
+}
+
+#booking-name,#booking-email {
+	height: 30px;
+	font-size: 15px;
+	font: montserrat;
+	font-weight: 700;
+	color: #252525;
+	width:100%;
+	border:0px;
+	padding: 2px;
+	background-color: rgba(255,255,255,.9);
+}
+
+.textinput{
+	height: 40px;
+	margin-top: 2%;
+	margin-bottom: 3%;
+	width: 80%;
+	border:0px;
+	padding: 2px 2px;
+	font-size: 15px;
+	font: montserrat;
+	font-weight: 600;
+	color: #525252;
+	background-color: rgba(233,232,228,1.00);
+}
+
+.textinput: hover  {
+	border: 0px;
+	box-shadow: 1px 1px 5px rgba(125,125,125,0.50) ;
+	width: 85%;
+}
+
+.textinput:focus {
+	border: 0px;
+	box-shadow: 2px 2px 5px rgba(125,125,125,0.50) ;
+	border-bottom: 2%;
+	border-bottom-color: #252525;
+	padding: 2px 2px;
+}
+
+.prices-box table {
+	/*This is the style only price table*/
+	width: 90%;/*I chose 90% to make the table align with the video*/
+	border:0px;
+}
+
+.radio,.checkbox {
+	display: inline;
+}
+
+.message{
+	/*This is to put update. Hopefully to get them to book a place which is directly under the text.*/
+	position: absolute;/*I used absolute so that I can use the top and left properties to move the position of the box and allow it to overlap with other elements.*/
+	top: 30%;
+	left: 10%;
+	width: 55%;
+	z-index: 1;/*I used this to move the message into the z axis*/
+	color: aliceblue;
+	font-weight: bold;
+	font-size: 75px;
+}
+
+.message p{
+	line-height: 80%;/*Because I have a general line height set for my general font I want to reduce it for the message since this is really huge hence the space will also be huge*/
+}
+
+#strive{
+	top: 31%;
+	pointer-events: none;/*I do not want visitors to save the image*/
+}
+
+.left-float-box{
+	color: aliceblue;
+	position: absolute;
+	width: 20%;
+	z-index:1;
+	left: 71%;
+	padding-left: 5%;
+	top: 90%;
+	font-size:13px ;
+}
+
+.button {
+	width: 80%;
+	height: 35px;
+	border: 1%;
+	color: #252525;
+	background: none;
+	border-color: #252525;
+}
+
+.button:hover {
+	background-color: #252525;
+	color:aliceblue;
+}
+
+#subscribe-button {
+    background-color:transparent; 
+    color: #252525; 
+    border: 2px solid #252525;
+	margin-left: 2%;
+	width: 20%;
+	height: 40px;
+}
+
+#subscribe-button:hover {
+    background-color:#252525; 
+    color:aliceblue; 
+}
+
+#book-button {
+    background-color: transparent; 
+    color: aliceblue; 
+    border: 2px solid aliceblue;	
+	width: 100%;
+	height: 40px;
+	margin: 2% 0;
+}
+
+#book-button:hover {
+    background-color: #252525;
+	border-color: #252525;
+    color: white;
+	box-shadow: 1px 1px 5px rgba(125,125,125,0.50) ; 
+}
+
+.textLabel{
+	padding: 0 0 2% 0;
+}
+
+.testimonial{
+	padding: 8% 10%;
+	background-image: url(../Images/backgrounds/tbg.jpeg);
+	background-size: 100%;
+}
+
+
+.testimonial li {
+	display: inline;
+	text-align: center;
+	padding: 5%;
+	width: 30%;
+
+}
+
+.testimonial li a {
+	text-decoration: none;
+	color:#000000;	
+}
+
+.subscribe-box{
+	padding: 2% 10% 5%;
+}
+
+.about{
+	padding:10% 10% 2px;
+	width: 40%;
+}
+
+#aboutdivide{
+	width: 100%;
+}
+
+
+.la{
+	padding: 6% 0 30% 0;
+}
+
+.local-attractions {
+  	width: 220px;
+	height: auto;
+  	background-color: #252525;
+  	position:relative;
+	float: left;
+  	margin: 1.5%;
+	border: 5px solid #252525;
+}
+
+.local-attractions:hover {
+	box-shadow: 5px 5px 3px rgba(125,125,125,0.50);
+}
+.la-description{
+	display:none;
+	color: aliceblue;
+	text-align: center;
+	padding: 2%;
+	vertical-align: middle;
+}
+.local-attractions:hover .la-description {
+	width: inherit;
+	height: 75.5%;
+	position: absolute;
+	top: 0px;
+	opacity: 0.9;
+	background-color: #252525;
+	display: block;
+}
+#box1{
+	background-color: royalblue;
+}
+
+#box2{
+	background-color: darkgreen;
+	width: 212px;
+}
+#box3{
+	background-color: palevioletred;
+}
+#box4{
+	background-color: brown;
+}
+.la-img{
+	width: 100%;
+	height: 80%;
+}
+.map-box{
+	margin-top: 25%;
+	margin: 0;
+	
+}
+
+.map-box iframe{
+    pointer-events:none;
+	width: 100%;
+	height: 450px;
+	border: 0px;
+}
+
+#subs-name,#subs-email{
+	width: 30%;
+	height: 35px;
+}
+
+.top{
+	border:1%;
+	text-align: center;
+	vertical-align: middle;
+	background: rgba(37,37,37,0.50);
+	width: 60px;
+	height: 50px;
+	padding: 0;
+	position: fixed;
+	left: 96%;
+	top: 90%;
+}
+
+.top a{
+	text-decoration: none;
+	color: aliceblue;
+}
+
+.top p{
+	font-weight:700;
+	font-size: 35px;
+	margin: 0;
+	padding: 0;
+	padding-right: 10px;
+}
+
+.top:hover{
+	background-color: #252525;
+	width: 70px;
+	padding-right: 20px;
+	left: 95%;
+	border-radius: 10px;
+}
+
+.local-attractions-links{
+	padding-left: 11%;
+	width: 20%;
+}
+
+.local-attractions-links li a{
+	text-decoration: none;
+	
+}
+
+
+footer{
+	background-image: url(../Images/backgrounds/footer-1.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-color: aliceblue;
+	background-size: 100%;
+	width: 100%;
+	padding-bottom: 5%;
+}
+
+#copyright{
+	padding:1px;
+	height:40px;
+	text-align:center;
+	font-weight: 300;
+	font-size:13px;
+	color:#D8D8D8;
+	background-color: #0F0F0F;
+}
+
+/*Virtual Tour*/
+
+@keyframes slider {
+	/*I chose backround-images in order to avoid creating a lot of divs to animate. Also this will prevent people from saving the */
+    0% {background-image: url(../Images/hostel/outside.jpg);}
+	9% {background-image: url(../Images/hostel/outside.jpg);}
+    10% {background-image: url(../Images/hostel/pool.jpeg);}
+	19% {background-image: url(../Images/hostel/pool.jpeg);}
+    20% {background-image: url(../Images/hostel/cafe.jpg);}
+	29% {background-image: url(../Images/hostel/cafe.jpg);}
+    30% {background-image: url(../Images/hostel/studio-room.jpeg);}
+	39% {background-image: url(../Images/hostel/studio-room.jpeg);}
+    40% {background-image: url(../Images/hostel/bathroom2.jpg);}
+	49% {background-image: url(../Images/hostel/bathroom2.jpg);}
+	50% {background-image: url(../Images/hostel/bathroom1.jpg);}
+	59% {background-image: url(../Images/hostel/bathroom1.jpg);}
+	60% {background-image: url(../Images/hostel/bed.jpg);}
+	69% {background-image: url(../Images/hostel/bed.jpg);}
+	70% {background-image: url(../Images/hostel/apartment-hall.jpeg);}
+	79% {background-image: url(../Images/hostel/apartment-hall.jpeg);}
+	80% {background-image: url(../Images/hostel/apartment-lounge.jpg);}
+	89% {background-image: url(../Images/hostel/apartment-lounge.jpg);}
+	90% {background-image: url(../Images/hostel/booknow.jpeg);}
+	100% {background-image: url(../Images/hostel/booknow.jpeg);}
+}
+
+.slider-box {
+    width: 100%;
+    height: 638px;
+    animation-name: slider;
+    animation-duration: 80s;
+	animation-iteration-count: infinite;
+	background-size: 100% auto;
+	pointer-events: none;
+}
+
+.small-menu{
+	padding: 2%;
+	padding-bottom: 2%;
+	height: 10%;
+	width: 20%;
+	left: 65%;
+}
+
+.small-menu li {
+	height: 10%;
+    font-weight: 700;
+	font-size: 14px;
+	padding: 0%; /*this is to overwrite the padding attribute give to all li tags in a nav*/
+}
+
+.caption-box{
+	background-color: rgba(37,37,37,.9);
+	height: 18.5%;
+	width: 53%;
+	margin-left: 12%;
+	z-index: 1;
+	position: absolute;
+	overflow: hidden;
+	text-align: center;
+}
+
+.description{
+	animation-name: captiontimer;
+	animation-duration: 80s;
+	animation-iteration-count: infinite;
+	position: absolute;
+	z-index: 2;
+	left: 15%;
+	
+}
+
+.description p{
+	font-size: 20px;
+	color:aliceblue;
+	font-weight: 400;
+	margin-top: 45px;
+	margin-bottom: 70px;
+	padding: 0;
+	
+}
+@keyframes captiontimer{
+	0%{top:0px;}
+	9%{top:0px;}
+	10%{top:-100px;}
+	19%{top:-100px;}
+	20%{top:-200px;}
+	29%{top:-200px;}
+	30%{top:-300px;}
+	39%{top:-300px;}
+	40%{top:-400px;}
+	49%{top:-400px;}
+	50%{top:-500px;}
+	59%{top:-500px;}
+	60%{top:-600px;}
+	69%{top:-600px;}
+	70%{top:-700px;}
+	79%{top:-700px;}
+	80%{top:-800px;}
+	89%{top:-800px;}
+	90%{top:-900px;}
+	100%{top:-900px;}
+}
+
+/*Contact Page*/
+#message-textarea{
+	height:100px;
+	overflow: scroll;
+}
+
+.col-1 table td{
+	width: 20%;
+}
